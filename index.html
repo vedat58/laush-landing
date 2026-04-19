@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #8B0000 100%);
             color: white;
             min-height: 100vh;
         }
@@ -20,14 +20,11 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="50">🦅</text></svg>') no-repeat center center;
-            background-size: 200px;
-            background-position: top 20%;
         }
         .logo {
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #ff4444, #cc0000);
+            background: linear-gradient(135deg, #FFD700, #4169E1, #0000FF);
             border-radius: 30px;
             display: flex;
             align-items: center;
@@ -46,7 +43,7 @@
             font-weight: 900;
             letter-spacing: 8px;
             margin-bottom: 20px;
-            background: linear-gradient(90deg, #fff, #ff4444);
+            background: linear-gradient(90deg, #FFD700, #FF0000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -58,7 +55,7 @@
         .download-btn {
             padding: 20px 60px;
             font-size: 1.3rem;
-            background: linear-gradient(135deg, #ff4444, #cc0000);
+            background: linear-gradient(135deg, #FFD700, #FF0000);
             border: none;
             border-radius: 50px;
             color: white;
@@ -66,10 +63,11 @@
             text-decoration: none;
             transition: transform 0.3s, box-shadow 0.3s;
             display: inline-block;
+            font-weight: bold;
         }
         .download-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(255, 68, 68, 0.5);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.5);
         }
         .features {
             display: flex;
@@ -84,7 +82,8 @@
             border-radius: 20px;
             width: 250px;
         }
-        .feature h3 { color: #ff4444; margin-bottom: 10px; }
+        .feature h3 { color: #FFD700; margin-bottom: 10px; }
+        .mega { color: #FFD700; font-weight: bold; }
         .footer {
             position: fixed;
             bottom: 20px;
@@ -99,7 +98,7 @@
         <h1>LAUSH</h1>
         <p class="tagline">Türkiye'nin Yeni Sosyal Medya Platformu</p>
         
-        <a href="https://github.com/vedat58/laush-landing/releases/download/v1.0/laush.apk" class="download-btn" download>📥 APK İndir</a>
+        <a href="laush.apk" class="download-btn" download>📥 APK İndir</a>
         
         <div class="features">
             <div class="feature">
@@ -113,6 +112,14 @@
             <div class="feature">
                 <h3>📝 Notlar</h3>
                 <p>Düşüncelerini paylaş</p>
+            </div>
+            <div class="feature">
+                <h3>⭐ Mega Tick</h3>
+                <p class="mega">Altın/Mavi Premium</p>
+            </div>
+            <div class="feature">
+                <h3>📸 Hikayeler</h3>
+                <p>24 saatlik hikayeler</p>
             </div>
             <div class="feature">
                 <h3>🔒 Güvenli</h3>
